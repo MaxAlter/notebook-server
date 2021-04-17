@@ -1,9 +1,9 @@
 const { Router } = require("express");
-const CommentControllers = require("./CommentControllers");
+const { getAllComment, createNewComment } = require("./CommentControllers");
 const router = Router();
 
-router.get("/all", CommentControllers.getAllComment);
+router.get("/all", getAllComment);
 
-router.post("/new", CommentControllers.createNewComment);
+router.post("/new", createNewComment);
 
 module.exports = router;

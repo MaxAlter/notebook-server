@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const CommentRoutes = require("./CommentRoutes");
-require("dotenv").config();
 
+require("dotenv").config();
 const PORT = process.env.PORT || 8080;
 const BASE_URL_BD = process.env.BASE_URL_BD;
 
